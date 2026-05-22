@@ -1,0 +1,160 @@
+<!-- ¿Qué es HTML? Significa HyperText Markup Language
+Es el lenguaje de marcado utilizado para crear páginas web, no es un lenguaje de programación es un lenguaje de estructura.
+Se utiliza la extensión .html o .htm para los archivos que contienen código HTML.
+El archivo llamado index.html es comúnmente utilizado como la página de inicio de un sitio web, ya que los servidores web buscan automáticamente este archivo cuando se accede a un directorio.
+-->
+<!-- Los comentarios en HTML se utilizan para agregar notas o información que no se muestra en la página web -->
+<!-- Atajo de teclado: ! sirve para generar el esqueleto básico de un documento HTML -->
+<!DOCTYPE html> <!-- La declaración DOCTYPE se utiliza para especificar la versión de HTML que se está utilizando -->
+<html lang="en"> <!-- El elemento raíz del documento HTML, con el atributo lang para especificar el idioma -->
+<head> <!-- El elemento head contiene información meta, enlaces a estilos y scripts -->
+    <meta charset="UTF-8"> <!-- El elemento meta charset se utiliza para especificar la codificación de caracteres del documento. Todos traducen el lenguaje humano a código binario (\(0\) y \(1\)) que entienden las computadoras. Estandar global.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- El elemento meta viewport se utiliza para controlar la apariencia de la página en dispositivos móviles -->
+    <title>Clase de HTML</title> <!-- El elemento title define el título de la página que se muestra en la pestaña del navegador -->
+</head>
+<body> <!-- El elemento body contiene el contenido visible de la página -->
+<!-- Etiquetas HTML son elementos que se utilizan para estructurar y dar formato al contenido de una página web.
+Su sintaxis básica es <etiqueta>contenido</etiqueta>, donde "etiqueta" es el nombre del elemento y "contenido" es el texto o los elementos anidados dentro de esa etiqueta. 
+-->
+<!-- Titulos son elementos de encabezado que se utilizan para definir la jerarquía de los contenidos. El máximo es h6  -->
+    <h1>Hola Mundo</h1> <!-- El elemento h1 se utiliza para definir un encabezado de nivel 1 -->
+    <h2>Subtítulo</h2> <!-- El elemento h2 se utiliza para definir un encabezado de nivel 2 -->
+    <h3>Subtítulo 2</h3> <!-- El elemento h3 se utiliza para definir un encabezado de nivel 3 -->
+    <h4>Subtítulo 3</h4> <!-- El elemento h4 se utiliza para definir un encabezado de nivel 4 -->
+    <h5>Subtítulo 4</h5> <!-- El elemento h5 se utiliza para definir un encabezado de nivel 5 -->
+    <h6>Subtítulo 5</h6> <!-- El elemento h6 se utiliza para definir un encabezado de nivel 6 -->
+    <h2> Otras etiquetas</h2>
+    <p> Este es un párrafo, se utiliza para agrupar texto y darle formato. </p> 
+    <p> Existen etiquetas abiertas y cerradas. Las etiquetas abiertas no tienen una etiqueta de cierre correspondiente, mientras que las etiquetas cerradas tienen una etiqueta de cierre. </p>
+    <p> Las etiquetas pueden contener imágenes, enlaces u otros elementos HTML. </p>
+    <img src="https://cataas.com/cat" width="300" alt="Logo de Google"> <!--
+    Una API es una forma de comunicación entre programas para entregar información o funcionalidades. En esta oportunidad esta API devuelve imagen de gatos, asi que utilizaremos ese url. 
+    El elemento img se utiliza para insertar una imagen en la página, con el atributo src para especificar la URL de la imagen y alt para proporcionar un texto alternativo
+    Un píxel (pixel = picture element) es la unidad más pequeña visible en una pantalla.
+     -->
+    <br> <!-- El elemento br se utiliza para insertar un salto de línea -->
+    <a target="_blank" href="https://www.google.com">Este es un enlace de google</a>
+    <div>Esto es un div</div> <!-- El elemento div se utiliza para agrupar elementos y aplicar estilos -->
+    <span>Esto es un span</span> <!-- El elemento span se utiliza para aplicar estilos a una parte específica del texto -->
+    <p> Pero las etiquetas son más que solo contenido, pueden tener características especiales llamados atributos.</p>
+    <p> Los atributos son valores que se asignan a las etiquetas para modificar su comportamiento o apariencia.</p>
+    <p> Por ejemplo, el atributo "src" en la etiqueta "img" especifica la URL de la imagen a insertar. El atributo alt proporciona un texto alternativo para la imagen.</p>
+    <h2> Atributos </h2>
+    <p> Existen distintos atributos como "class", "id", "style", etc. Los más importantes son "class" y "id". </p>
+    <p> El atributo "class" se utiliza para asignar una o más clases a una etiqueta, lo que permite aplicar estilos CSS. </p>
+    <p> El atributo "id" se utiliza para asignar un identificador único a una etiqueta, lo que permite identificarla de forma específica. </p>
+    <!-- Si selecciono class puede que se repita en otras etiquetas y si selecciono una etiqueta tipo igual se puede repetir, con el id me aseguro que estoy en la etiqueta correcta -->
+    <p> El atributo "style" se utiliza para aplicar estilos CSS directamente a una etiqueta. </p>
+    <h2> Listas </h2>
+    <p> Las listas pueden ser ordenadas (ol) o desordenadas (ul). </p>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    <ol> 
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+    <p> Las listas ordenadas utilizan números para enumerar los elementos, mientras que las listas desordenadas utilizan viñetas. </p>
+    <p> Cada elemento de una lista se define con la etiqueta "li". </p>
+    <p> Se puede definir como serán las viñetas o números de las listas con el atributo type. Por ejemplo: </p>
+    <ol type="a"> <!-- square -->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+    <p> Para más información sobre listas, puedes consultar la documentación de HTML en el <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/ul">sitio web de Mozilla</a>. </p>
+    
+    <h2> Formularios </h2>
+    <p> Los formularios se utilizan para recopilar información del usuario. </p>
+    <p> Cada campo de un formulario se define con la etiqueta "input". </p>
+    <form action="/submit" method="post"> <!-- El elemento form se utiliza para crear un formulario, con el atributo action para especificar la URL a la que se enviarán los datos y method para especificar el método de envío -->
+        <label for="name">Nombre:</label> <!-- El elemento label se utiliza para definir una etiqueta para un elemento de formulario, con el atributo for para asociarla con un elemento específico -->
+        <input type="text" id="name" name="nombre"> <!-- El elemento input se utiliza para crear un campo de entrada, con el atributo type para especificar el tipo de campo, id para identificarlo y name para asignar un nombre al dato que se enviará no tiene relacion con lavel si no que es para enviar datos o acceder a datos en backend-->
+        <br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <input type="submit" value="Enviar"> <!-- El elemento input con type "submit" se utiliza para crear un botón de envío en el formulario -->
+        <!-- Otra forma de crear un botón -->
+        <input type="button" value="Cancelar"> <!-- El elemento input con type "button" se utiliza para crear un botón que no envía el formulario, sino que puede ser utilizado para otras acciones -->
+        <!-- Otra forma de crear botones -->
+        <button type="submit">Enviar</button> <!-- El elemento button se utiliza para crear un botón, con el atributo type para especificar su función -->
+        <button type="button">Cancelar</button>
+        
+        <!-- ¿Cuando se utiliza input o button? Respuesta: Se utiliza input cuando se necesita un boton simple, y button cuando se necesita un botón con un comportamiento personalizado, iconos o texto más complejo. -->
+    </form>
+    <p> Para más información, puedes consultar la documentación de HTML en el <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/form">sitio web de Mozilla</a>. </p>
+    
+    <h2> Tablas </h2>
+    <p> Las tablas se utilizan para organizar datos en filas y columnas. </p>
+    <table border="1"> <!-- El elemento table se utiliza para crear una tabla, con el atributo border para especificar el grosor del borde -->
+        <tr> <!-- El elemento tr se utiliza para definir una fila en la tabla -->
+            <th>Nombre</th> <!-- El elemento th se utiliza para definir una celda de encabezado en la tabla -->
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+        <tr>
+            <td>Alice</td> <!-- El elemento td se utiliza para definir una celda de datos en la tabla -->
+            <td>30</td>
+            <td>Madrid</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>25</td>
+            <td>Barcelona</td>
+        </tr>
+        <tr>
+            <td>Charlie</td>
+            <td>35</td>
+            <td>Valencia</td>
+        </tr>
+    </table>
+    <p> Para más información sobre tablas, puedes consultar la documentación de HTML en el <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/table">sitio web de Mozilla</a>. </p>
+    
+    <h2> Multimedia </h2>
+    <p> HTML también permite la inclusión de contenido multimedia como audio y video. </p>
+    <audio controls> <!-- El elemento audio se utiliza para insertar contenido de audio, con el atributo controls para mostrar los controles de reproducción -->
+        <source src="audio.mp3" type="audio/mpeg"> <!-- El elemento source se utiliza para especificar la fuente del archivo de audio, con el atributo src para la URL y type para el tipo de archivo -->
+    </audio>
+    <video controls> <!-- El elemento video se utiliza para insertar contenido de video, con el
+    atributo controls para mostrar los controles de reproducción -->
+            <source src="video.mp4" type="video/mp4"> <!-- El elemento source se utiliza para especificar la fuente del archivo de video, con el atributo src para la URL y type para el tipo de archivo -->
+    </video>
+    <p> Para más información sobre multimedia, puedes consultar la documentación de HTML en el <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/audio">sitio web de Mozilla</a> para audio y <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/video">sitio web de Mozilla</a> para video. </p>
+    
+    <h2> Semántica </h2>
+    <p> La semántica en HTML se refiere al uso de etiquetas que describen el significado del contenido, en lugar de solo su apariencia. </p>
+    <p> Las etiquetas semánticas ayudan a los motores de búsqueda y a los lectores de pantalla a entender mejor el contenido de la página. </p>
+    <p> Algunos ejemplos de etiquetas semánticas son: </p>
+    <header> <!-- El elemento header se utiliza para definir la cabecera de una sección o página -->
+        <h1>Encabezado de la página</h1>
+    </header>
+    <nav> <!-- El elemento nav se utiliza para definir una sección de navegación -->
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <main> <!-- El elemento main se utiliza para definir el contenido principal de la página -->
+        <h2>Contenido principal</h2>
+        <p> Este es el contenido principal de la página. </p>
+    </main>
+    <footer> <!-- El elemento footer se utiliza para definir el pie de página de una sección
+    o página -->
+        <p> © 2024 Mi Sitio Web. Todos los derechos reservados. </p>
+    </footer>
+    <p> Las secciones semánticas ayudan a estructurar el contenido de la página de manera más clara y organizada. </p>
+    <section> <!-- El elemento section se utiliza para definir una sección genérica en un documento -->
+        <h2>Sección de ejemplo</h2>
+        <p> Esta es una sección de ejemplo. </p>
+    </section>
+    <p> A continuación, una imagen que explica la semántica: </p>
+    <img src="image.png" alt="Explicación de la semántica en HTML">
+    <p> Para más información sobre semántica, puedes consultar la documentación de HTML en el <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header">sitio web de Mozilla</a> para header, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav">sitio web de Mozilla</a> para nav, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main">sitio web de Mozilla</a> para main y <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer">sitio web de Mozilla</a> para footer. </p>
+</body>
+</html>
